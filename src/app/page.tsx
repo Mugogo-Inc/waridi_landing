@@ -210,9 +210,9 @@ export default function HomePage() {
 
                 <ul className={styles.perksList}>
                   {[
-                    { icon: 'check_circle', strong: '20% Off',                   rest: ' Your First Signature Treatment' },
-                    { icon: 'check_circle', strong: 'Free Complimentary Pickup', rest: ' Anywhere in Nungwi' },
-                    { icon: 'check_circle', strong: 'Priority Booking',          rest: ' for Peak Holiday Hours' },
+                    { icon: 'verified',       strong: '20% Off',                   rest: ' Your First Signature Treatment' },
+                    { icon: 'local_shipping', strong: 'Free Complimentary Pickup', rest: ' Anywhere in Nungwi' },
+                    { icon: 'star',           strong: 'Priority Booking',          rest: ' for Peak Holiday Hours' },
                   ].map(({ icon, strong, rest }) => (
                     <li key={strong} className={styles.perkRow}>
                       <i className="material-icons" aria-hidden="true">{icon}</i>
@@ -223,7 +223,7 @@ export default function HomePage() {
               </div>
 
               {/* Right — booking card */}
-              <div className={styles.bookingCard}>
+              <div className={styles.glassBookingCard}>
                 <h3 className={styles.bookingCardH3}>Secure Early Bird Privileges</h3>
                 <p className={styles.cardSub}>
                   No payment required now. Lock in your launch discount instantly via WhatsApp.
